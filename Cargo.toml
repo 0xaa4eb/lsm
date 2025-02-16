@@ -1,0 +1,24 @@
+[package]
+name = "lsm-tree"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# For error handling
+thiserror = "1.0"
+anyhow = "1.0"
+
+# For efficient binary serialization
+bincode = "1.3"
+serde = { version = "1.0", features = ["derive"] }
+
+# For file I/O operations
+tokio = { version = "1.0", features = ["full"] }
+
+# For logging
+log = "0.4"
+env_logger = "0.10"
+
+[dev-dependencies]
+tempfile = "3.2"
+rand = "0.8"
